@@ -1,0 +1,827 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    transition: color .3s ease;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color:  #74788d;
+}
+input, textarea, button, a, {
+    font-family: inherit;
+    color:  #74788d;
+}
+
+
+.col-md-4, .col-md-8 {
+	display: table-cell;
+    max-height: 100%;
+    padding-top: 10px;
+}
+
+.body-col {
+	border-radius: 5px;
+	margin: 5px 5px 5px 0;
+	background-color: white;
+	width: 100%;
+    max-width: 100%;
+	height: 100%;
+    overflow: hidden;
+    webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+}
+.col2x {
+    margin-bottom:-5px;
+
+}
+
+.body-col2{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F2F7;
+}
+
+.body-row {
+	display: table;
+	width: 100%;
+}
+
+.row {
+    margin: auto !important;
+    padding-top: 15px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.sidebar-dropdown::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul{
+     position: sticky;
+    top: 0;
+}
+
+
+
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+
+/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+#sidebar .sidebar-header strong {
+    display: none;
+}
+#sidebar.active .sidebar-header h3 {
+    display: none;
+}
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center !important;
+    font-size: 0.85em;
+}
+
+
+#sidebar.active > .sidebar-header {
+    justify-content: center;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active span{
+    display: none;
+}
+
+.side-drop-toggler{
+    float: right;
+}
+
+.button_fadeUp {
+  -webkit-transform:rotate(90deg);
+  -webkit-transition-duration: 0.5s;
+}
+
+/* Same dropdown links padding*/
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+/* Changing the arrow position to bottom center position, 
+   translateX(50%) works with right: 50% 
+   to accurately  center the arrow */
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.active_item {
+    display: none;
+    transition: all 0.3s;
+}
+
+
+
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+
+
+#sidebar {
+    background: #1E1E2D;
+    color: #fff;
+    transition: all 0.3s;
+
+}
+
+
+.sidebar-header {
+    display: flex;
+    padding: 0.5em;
+    background: #1A1A27;
+    justify-content: space-between;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.0rem;
+    display: block;
+    color:  #7386D5;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sidebar li {
+    
+}
+#sidebar ul li a:hover {
+    color:#FFF;
+    background-color: #1b1b28;
+    text-decoration: none;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #1E1E2D;
+}
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top:0 !important;
+}
+
+.navbar2 {
+  width: 100%;
+  background-color: #FFF;
+}
+
+.navbar2 a {
+    float: left;
+    color: #6c7293;
+}
+
+.navbar2 .calendar{
+    float: right;
+}
+
+.navbar-toggler {
+    background-color: none!important;
+    color: #FFF !important;
+}
+
+.nav-resp {
+    width: 100%;
+    display: none;
+
+}
+
+.navbar button {
+    float: right;
+}
+
+.chart-container {
+    width: 100% !important;
+    background: #1F2A49;
+    overflow: hidden;
+}
+
+.chart-container canvas {
+    width: 105% !important;
+    margin-left: -13px;
+    margin-bottom: -13px;
+}
+
+.chart-container2 {
+    overflow: hidden;
+    width: 100% !important;
+    height: auto;
+    background: #f2f2f2;
+    border-radius: 5px;
+    webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    margin-bottom:10px;
+}
+
+.chart-container2 canvas{
+    width: 105% !important;
+    margin-left: -13px;
+    margin-bottom: -13px;
+}
+
+.chart-container3 canvas{
+    width: 105% !important;
+    margin-left: -13px;
+    margin-bottom: -13px;
+}
+
+.chart-container3 {
+    overflow:hidden;
+    width: 100% !important;
+    height: auto;
+    background: #f2f2f2;
+    border-radius: 5px;
+    webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    margin-top: 5px;
+
+}
+
+
+
+
+.chart2 {
+    margin-left: -6px;
+    width: 100%; 
+}
+
+.chart3 {
+    margin-left: -6px;
+    width: 100%; 
+}
+
+
+
+.toggle-btn-active {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+}
+
+.chart-toggle button{
+    background-color: #4298c3;
+    border-color: transparent;
+    color: white;
+    border-radius: 5px;
+    float: right;
+}
+
+.chart-toggle button:hover {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+}
+
+.chart-toggle p {
+float: left;
+}
+
+
+
+.chart-widget-boxes{
+    margin: -4.3rem auto 0 auto;
+    position: relative;
+    width: 90%;
+}
+
+.widget-box{
+margin: 6px;
+ padding: 24px 24px 24px 6px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    background-color: #fff;
+    margin: .3rem;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.dash-body {
+    background-color: #F1F2F7;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.container-fluid {
+    padding: 0!important;
+    min-height: 100vh !important;
+}
+
+
+.timeline-container {
+    width: 100%;
+    max-width:100%;
+
+}
+
+.timeline {
+    position: relative;
+    left: -30px;
+    max-width: 80%;
+    float: right;
+    top: 20px;
+}
+
+.timeline::before{
+    content: '';
+    font-size: 1rem;
+    position: absolute;
+    left: 1.3rem;
+    width: .214rem;
+    top: 5px;
+    bottom: 5px;
+    height: calc(100% - 5px);
+    background-color: #e7e9f5;
+
+}
+
+.timeline .event {
+    list-style: none;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #74788d;
+}
+
+.timeline .event:before {
+  top:2px;
+  left: -5.28125rem;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 1.25rem;
+  position: absolute;
+  z-index: 99;
+}
+.timeline .event::after {
+  box-shadow: 0 0 0 4px #4298c3;
+  top: 0.6rem;
+  left: -1.3rem;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  border: 4px white;
+  position: absolute;
+  content: "";
+  z-index: 999;
+  background-color: white;
+}
+
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25rem 1.25rem;
+    min-height: 3.75rem;
+    color: #4298c3;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-wrap span {
+    font-size: 1.125rem;
+}
+
+
+.header-box-title{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    color: #48465b !important;
+}
+
+.drop-toggle button{
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.checkboxes {
+        background: #f0f3ff;
+        background: #e4e8ee;
+    border: 1px solid transparent!important;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table > tbody > tr > th{
+    vertical-align: middle;
+}
+
+.table > tbody > tr > th > input {
+    display: block;
+    margin: 0 auto;
+}
+
+.table > thead > tr > th > input{
+   display: block;
+   margin: 0 auto;
+}
+
+.drop-toggle {
+    display: flex;
+    justify-content: center;
+}
+.company-icon, .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon {
+    color: #fff;
+    background: #5867dd;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.small-icon {
+    margin-right: 5px;
+}
+.small-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.company-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-box .user-icon, .userbox .user-details{
+    float: left;
+}
+
+.dataTables_scrollHead{
+    display: n
+}
+
+.dataTables_length{
+    color: red !important;
+    float: right !important;
+}
+.dataTables_length label {
+    padding: 10px 10px 0 0;
+
+
+}
+
+.dataTables_length > label > select {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0!important;
+    color: #93a2dd;
+    border: 1px solid #979797;
+}
+
+.dataTables_paginate {
+    float: left !important}
+
+
+.image-filled{
+    width: 100%;
+    position: relative;
+    min-height: 300px;
+    background-image: url("../images/product4.jpg");
+    background-size: cover;
+}
+
+.image-filled a h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-filled {
+    padding: 25px 25px;
+    display: inline-block;
+
+}
+
+.box-filled a{
+    box-sizing: border-box ;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.2);
+    cursor: text!important;
+}
+
+.box-filled a:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.box-header{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 20%,rgba(0,0,0,.1) 40%,rgba(0,0,0,.5) 90%) no-repeat scroll 0 0;
+}
+
+.box-header h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 0 25px 25px;
+}
+
+
+.content-wrap {
+    width: 100%;
+    padding: 25px;
+}
+.content-head {
+    display: flex;
+}
+
+.stats {
+    text-align: center;
+}
+.number-stats{
+        font-size: 1.4rem;
+    font-weight: 700;
+    color: #5D78FF;
+}
+
+.link-stats{
+    color: #74788d !important;
+}
+.link-stats:hover {
+color: #5D78FF !important;
+text-decoration: none;
+}
+
+.content-text {
+    padding-top: 25px;
+}
+
+.content-text p {
+    text-align: justify;
+    color: #74788d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content-box a {
+    box-sizing: border-box ;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+   text-decoration: none!important;
+   box-sizing: border-box;
+   font-weight: 700;
+   font-size: 1rem;
+}
+
+.content-box {
+    background-color: rgba(93,120,255,.1);
+    display: inline-block;
+    color: #5D78FF;
+}
+
+.content-box:hover {
+    background-color: #5D78FF !important;
+}
+
+.paginate_button:active{
+       color: #fff !important;      
+}
+
+.paginate_button:hover{
+    background: #5d78ff !important;
+    color: #fff !important;
+    border: 1px solid transparent!important;
+}
+
+a.paginate_button.current {
+    color: #FFF;
+}
+
+.current{
+    background: #5d78ff !important;
+    border: 1px solid transparent !important;
+}
+
+
+.dataTables_length > label > select {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #93a2dd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.dataTables_length > label > select:hover {
+    color: #FFF !important;
+    background-color: #5D78FF !important;
+}
+
+.action-box > .chart-toggle button{
+    background-color: white;
+    color: black;
+}
+.action-box > .chart-toggle {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-wrap{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footer-wrap > .footer-contact {
+    color: #74788d;
+}
+
+
+.footer-wrap a{
+    color: #74788d !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-list > li {
+    list-style: circle;
+    padding-right: 10px;
+}
+.sub-drop-toggler {
+    float: right;
+}
+
+.nav-resp > .navbar-brand {
+    color: #FFF !important;
+
+}
+
+@media (max-width: 640px) {
+    .row {
+        margin: auto!important;
+    }
+    .nav-resp {
+        display: flex;
+        align-items: center;
+    }
+    #sidebar {
+        margin-left: -250px;
+        position: absolute;
+        z-index: 999;
+    }
+    #sidebar.respactive {
+        margin-left: 0;
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .toggle_button{
+        display: none;
+    }
+
+    .sidebar-header {
+        justify-content: center;
+    }
+    .navbar-toggler {
+        color: white;
+    }
+    .account-toggle{
+        display: inline-block !important;
+    }
+
+
+    .container-fluid {
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    .navbar {
+        justify-content: end!important;
+        background-color: #1E1E2D;
+        padding: 0 !important;
+        border-bottom: none;
+    }
+
+    .nav-resp {
+        padding:  8px 16px;
+    }
+
+
+    .navbar2 .item-tohide {
+        display: none;
+    }
+
+    .navbar2 .nav-link {
+        padding: .5rem .5rem    }
+    .navbar-collapse {
+        background-color: #FFF;
+    }
+
+    .timeline .event:before {
+        left: -5.28125rem;
+
+    }
+    .timeline {
+        left: -0.625rem;
+    }
+
+    .company-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .company-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-wrap {
+        display: inline-block;
+        text-align: center;
+    }
+
+.dataTables_paginate {
+    text-align: center;
+    /* display: inline-block; */
+    font-size: small;
+    margin-left: -15px !important;
+
+
+}
+
+
+
+

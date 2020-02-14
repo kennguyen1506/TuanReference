@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../statics/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/b-1.6.1/datatables.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/040029dc0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrapper">
+	<nav id="sidebar">
+		<div class="sidebar-header">
+			<div class="sidebar-logo">
+				<span>BRAND LOGO</span>
+			</div>
+			<div class="sidebar-toggle">
+				<a href="#" class="toggle_button" id="sidebarCollapse">
+					<i class="fa fa-angle-left"></i>
+					<i class="fa fa-angle-left"></i>
+				</a>
+			</div>
+		</div>
+		<ul class="list-unstyled components">
+			<li><a href="#">Menu</a></li>
+			<li class="sub-menu">
+				<a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+					<i class="fab fa-app-store"></i>
+					<span>
+						Application
+					</span>
+					<span class="side-drop-toggler">
+						<i class="fa fa-angle-right"></i>	
+					</span>
+				</a>
+				<ul class="collapse" id ="homeSubmenu2">
+					<li class="side-list">
+						<a  href="#sublink_drop" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>
+
+						</ul>
+					</li>
+					<li class="side-list">
+						<a  href="#sublink_drop2" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop2">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>
+							
+						</ul>
+					</li>
+					<li class="side-list">
+						<a  href="#sublink_drop3" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop3">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>	
+						</ul>
+					</li>
+				</ul>
+			</li>			
+			<li class="sub-menu">
+				<a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+					<i class="fas fa-file"></i>
+					<span>
+						Pages
+					</span>
+					<span class="side-drop-toggler">
+						<i class="fa fa-angle-right"></i>	
+					</span>
+				</a>
+				<ul class="collapse" id ="homeSubmenu3">
+					<li class="side-list">
+						<a  href="#sublink_drop6" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop6">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>
+						</ul>
+					</li>
+					<li class="side-list">
+						<a  href="#sublink_drop4" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop4">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>
+							
+						</ul>
+					</li>
+					<li class="side-list">
+						<a  href="#sublink_drop5" data-toggle="collapse" aria-expanded="false" class="sidebar-dropdown">
+							<span>Sublink1</span>
+							<span class="sub-drop-toggler">
+								<i class="fa fa-angle-right"></i>	
+							</span>
+						</a>
+						<ul class="collapse" id="sublink_drop5">
+							<li>Sublinksub</li>
+							<li>Sublinksub</li>	
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a>
+					<i class="fab fa-monero"></i>
+					<span>
+						Menu item
+					</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container-fluid">
+		<div class="nav-container">
+			<nav class="navbar navbar-expand-lg navbar-light ">
+				<div class="nav-resp">
+					<span class="navbar-brand mr-auto">BRAND LOGO</span>
+					<button class="navbar-toggler" type="button" id="sidebarToggle">
+					    <i class="fas fa-ellipsis-v"></i>
+					</button>
+				</div>
+				<div class="navbar2">
+					<a href="#" class="navbar-brand nav-link">Dashboard</a>
+					<div class="calendar">
+					  	<a href="#" class="nav-link">Today: <span id="date-display"></span></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div></div>
+		<div class="dash-body">
+			<div class="row body-row">
+					<div class="col-md-4">
+						<div class="body-col">
+							<div class="chart-container">
+								<div class="header-wrap">
+									<span>Activity</span>
+									<div class="chart-toggle">
+										<button type="button" class="dropdown-toggle chart-toggle-btn" data-toggle="dropdown">
+										    Export
+										</button>
+										<div class="dropdown-menu dropdown-menu-right">
+										    <a class="dropdown-item" href="#">Link 1</a>
+										    <a class="dropdown-item" href="#">Link 2</a>
+										    <a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</div>
+								</div>
+								<canvas id="myChart" class="chart"></canvas>
+							</div>
+							<div class="chart-widget-boxes">
+								<div class="row">
+									<div class="col-6">
+										<div class="widget-box">
+											<span><i class="glyphicon glyphicon-book"></i></span>
+											<h5><a href="#">Delivery</a></h5>
+											<p><a href="#">15 New Packages</a></p>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="widget-box">
+											<span><i class="glyphicon glyphicon-book"></i></span>
+											<h5><a href="#">Delivery</a></h5>
+											<p><a href="#">15 New Packages</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6">
+										<div class="widget-box">
+											<span><i class="glyphicon glyphicon-book"></i></span>
+											<h5><a href="#">Delivery</a></h5>
+											<p><a href="#">15 New Packages</a></p>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="widget-box">
+											<span><i class="glyphicon glyphicon-book"></i></span>
+											<h5><a href="#">Delivery</a></h5>
+											<p><a href="#">15 New Packages</a></p>
+										</div>
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+					<div class="col-md-4 col2x">
+						<div class="body-col2">
+								<div class="chart-container2">
+									<div class="header-wrap">
+										<span>More Activity</span>
+										<div class="chart-toggle">
+											<button type="button" class="dropdown-toggle chart-toggle-btn" data-toggle="dropdown">
+											    Export
+											</button>
+											<div class="dropdown-menu dropdown-menu-right">
+											    <a class="dropdown-item" href="#">Link 1</a>
+											    <a class="dropdown-item" href="#">Link 2</a>
+											    <a class="dropdown-item" href="#">Link 3</a>
+											</div>
+										</div>
+									</div>
+									<canvas id="myChart2" class="chart2"></canvas>
+								</div>
+								<div class="chart-container3">
+									<div class="header-wrap">
+										<span>More Activity</span>
+										<div class="chart-toggle">
+											<button type="button" class="dropdown-toggle chart-toggle-btn" data-toggle="dropdown">
+											    Export
+											</button>
+											<div class="dropdown-menu dropdown-menu-right">
+											    <a class="dropdown-item" href="#">Link 1</a>
+											    <a class="dropdown-item" href="#">Link 2</a>
+											    <a class="dropdown-item" href="#">Link 3</a>
+											</div>
+										</div>
+									</div>
+									<canvas id="myChart3" class="chart3 "></canvas>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="body-col">
+							<div class="header-wrap">
+								<span>Timeline Header</span>
+								<div class="chart-toggle">
+											<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+											<i class="fas fa-ellipsis-h"></i>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right">
+											    <a class="dropdown-item" href="#">Link 1</a>
+											    <a class="dropdown-item" href="#">Link 2</a>
+											    <a class="dropdown-item" href="#">Link 3</a>
+											</div>
+								</div>	
+							</div>
+								<div class="timeline-container">
+									<ul class="timeline">
+									    <li class="event" data-date="10:00">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									    <li class="event" data-date="12:45">
+									      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>    
+									    </li>
+									</ul>
+								</div>
+						</div>
+					</div>
+			</div>
+			<div class="row body-row2">
+				<div class="col-md-8">
+					<div class="body-col">
+						<div class="header-wrap">
+							<span>Datatables Plugin</span>
+							<div class="chart-toggle">
+								<button type="button" class="dropdown-toggle chart-toggle-btn" data-toggle="dropdown">
+									Export
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Link 1</a>
+									<a class="dropdown-item" href="#">Link 2</a>
+									<a class="dropdown-item" href="#">Link 3</a>
+								</div>
+							</div>
+						</div>
+						<div class="content-wrap">
+							<div class="table-wrap">
+								<table class="table" id="myTable">
+									<thead>
+										<th class="th-checkbox"><input id="checkAll" class="checkboxes" type="checkbox" name="fist-checkbox"></th>
+										<th class="company-col">Company</th>
+										<th class="date-col">Date</th>
+										<th class="status-col">Status</th>
+										<th class="manage-col">Managed By</th>
+										<th class="action-col">Actions</th>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<input class="checkboxes" type="checkbox" name="fist-checkbox">
+											</th>
+											<td class="company-box box">
+												<div class="company-icon small-icon">
+													<img src="../statics/images/logo1.png">
+												</div>
+												<div class="company-details">
+													<a href="#">Gleichner, Ziemann and Gutkowski</a>
+													<br>
+													<span>Angular, React</span>
+												</div>
+											</td>
+											<td class="date-box">
+												<span>2/12/2018</span>
+											</td>
+											<td class="status-box">
+												<span>success</span>
+											</td>
+											<td class="user-box box">
+												<div class="user-icon small-icon">
+													<span>N</span>
+												</div>
+												<div class="user-details">
+													<a href="#">Nixie Sailor</a>
+													<br>
+													<span>Designer</span>
+												</div>
+											</td>
+											<td class="action-box">
+												<div class="chart-toggle">
+													<button type="button" class="chart-toggle-btn" data-toggle="dropdown">
+													<i class="fas fa-ellipsis-h"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <a class="dropdown-item" href="#">Link 1</a>
+													    <a class="dropdown-item" href="#">Link 2</a>
+													    <a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="body-col">
+						<div class="image-filled">
+							<div class="box-filled">
+								<a href="#">RECENT</a>
+							</div>
+							<div class="box-header">
+								<h3>
+									Article Box
+								</h3>
+							</div>
+						</div>
+						<div class="content-wrap">
+							<div class="content-head justify-content-between">
+								<div class="company-box box">
+									<div class="company-icon small-icon">
+										<img src="../statics/images/user1.jpg">
+									</div>
+									<div class="company-details">
+										<a href="#">Tuan Nguyen</a>
+										<br>
+										<span>Front End Fresher</span>
+									</div>
+								</div>
+								<div class="stats widget-stats">
+									<span class="number-stats">18</span>
+									<br>
+									<a href="#" class="link-stats">Comments</a>
+								</div>
+							</div>
+							<div class="content-text">
+								<p>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting  scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.
+            					</p>
+							</div>
+							<div class="content-box">
+								<a href="#">Read more...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-container">
+			<div class="footer-wrap">
+				<div class="footer-contact">
+					<span>2020 @<span>
+					<a href="#">Tuan Nguyen H.</a>
+				</div>
+				<div class="footer-link">
+					<a>Email: tuan.h.nguyen@wsu.edu</a>
+					<br>
+					<a>Mobile: +84 906 761 921</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+ <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../statics/js/function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/b-1.6.1/datatables.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+</body>
+</html>
