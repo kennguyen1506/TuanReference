@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+"use strict";
 
 //toggle sidebar active class onclick
 $('#sidebarCollapse').on('click', function(){
@@ -20,7 +20,7 @@ $(".side-list").on('click', function(){
     $(this).find('.sub-drop-toggler').toggleClass('button_fadeUp');
 });
 
-//toggle sidebar active clss onhover
+//toggle sidebar active class onhover
 $("#sidebar").on('mouseover',function(){
     if ($(this).hasClass('active')) {
         $(this).removeClass('active');
@@ -192,9 +192,6 @@ var myChart = new Chart(ctx, {
         legend:{
           display: false
         }
-
-
-
     }
 });
     

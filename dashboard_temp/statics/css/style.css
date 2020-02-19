@@ -30,14 +30,8 @@ input, textarea, button, a, {
     webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
     box-shadow: 0 1px 15px 1px rgba(69,65,78,.06);
 }
-.col2x {
-    margin-bottom:-5px;
-
-}
 
 .body-col2{
-    margin-top: 5px;
-    margin-left: 5px;
     width: 100%;
     height: 100%;
     background-color: #F1F2F7;
